@@ -1,4 +1,3 @@
-````markdown
 <p align="center">
   <img src="assets/banner.png" alt="Cloud Threat Detection System">
 </p>
@@ -66,7 +65,7 @@ The goal is to provide a lightweight, extensible foundation for cloud security m
 
 ## Architecture
 
-![Architecture](assets\architecture-diagram.png)
+![Architecture](assets/architecture-diagram.png)
 
 The platform follows a modular detection engineering architecture designed around separation of concerns.
 
