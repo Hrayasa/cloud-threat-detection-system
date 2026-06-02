@@ -4,54 +4,116 @@
 
 # Cloud Threat Detection System
 
-A cloud-native threat detection platform built with FastAPI and PostgreSQL.
+## Project Overview
 
-## Features
+[Existing content]
 
-- JWT Authentication
-- User Registration and Login
-- Alert Management API
-- Log Upload API
-- Brute Force Detection (MITRE ATT&CK T1110)
-- Impossible Travel Detection (MITRE ATT&CK T1078)
-- Risk Scoring Engine
-- Swagger/OpenAPI Documentation
-- PostgreSQL Persistence
+## Key Features
 
-## Tech Stack
+[Existing content]
 
-- Python
-- FastAPI
-- PostgreSQL
-- SQLAlchemy
-- JWT Authentication
-- Swagger UI
+## Architecture
 
-## Detection Rules
+![Architecture](assets/architecture-diagram.png)
 
-### Brute Force Login Attempts (T1110)
+Short architecture explanation.
 
-Detects repeated failed login attempts from the same IP address within a configurable time window.
+## Technology Stack
 
-### Impossible Travel (T1078)
+[Existing content]
 
-Detects successful logins from geographically distant locations within an unrealistic travel timeframe.
+## Detection Pipeline
+
+[Existing content]
+
+## Screenshots
+
+### Swagger API Documentation
+
+![Swagger](assets/api-swagger.png)
+
+Interactive API documentation built with FastAPI and Swagger UI.
+
+### Detection Results
+
+![Alerts](assets/alerts-dashboard.png)
+
+Generated alerts enriched with MITRE ATT&CK mappings and risk scores.
+
+### MITRE ATT&CK Mapping
+
+![MITRE](assets/mitre-mapping.png)
+
+Current ATT&CK technique mappings implemented in the platform.
+
+## Detection Demonstrations
+
+### Brute Force Detection
+
+![Brute Force Demo](assets/brute-force-demo.gif)
+
+Detects repeated failed login attempts and generates T1110 alerts.
+
+### Impossible Travel Detection
+
+![Impossible Travel Demo](assets/impossible-travel-demo.gif)
+
+Detects logins from geographically distant locations within unrealistic timeframes and generates T1078 alerts.
+
+## MITRE ATT&CK Mapping
+
+| Detection | ATT&CK ID | Technique |
+|------------|-----------|------------|
+| Brute Force Login | T1110 | Brute Force |
+| Impossible Travel | T1078 | Valid Accounts |
+
+## Alert Lifecycle
+
+OPEN
+→ ACKNOWLEDGED
+→ SUPPRESSED
+→ ESCALATED
 
 ## API Documentation
 
-Swagger UI:
+See:
 
-```text
-http://localhost:8000/docs
-```
+- docs/API_REFERENCE.md
+- docs/ARCHITECTURE.md
+- docs/DETECTION_ENGINE.md
 
-## Running Locally
+## Local Development Setup
 
-```bash
-pip install -r requirements.txt
-uvicorn app.main:app --reload
-```
+[Existing content]
+
+## Example Alert Output
+
+[Existing content]
+
+## Future Roadmap
+
+[Existing content]
+
+## Wazuh Differentiation
+
+This project is intentionally positioned as a lightweight API-first threat detection platform focused on detection engineering concepts, MITRE ATT&CK enrichment, alert triage workflows, and cloud security monitoring.
+
+Unlike Wazuh, which is a full SIEM/XDR platform with agents, compliance modules, and enterprise-scale monitoring, this project focuses on demonstrating the core building blocks of a detection engineering platform.
+
+## Documentation
+
+See the docs directory for detailed documentation.
+
+## Contributing
+
+See docs/CONTRIBUTING.md
+
+## License
+
+MIT License
 
 ## Author
 
 Hrishikesh Rayasa
+M.Tech CSE (Networks)
+Manipal Institute of Technology
